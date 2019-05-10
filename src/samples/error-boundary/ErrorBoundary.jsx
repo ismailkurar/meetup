@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -16,7 +15,7 @@ class ErrorBoundary extends React.Component {
   }
 
   logErrorToMyService = (error) => {
-    console.log(error) // eslint-disable-line
+    console.log(error)
   };
 
   componentDidCatch(error, info) {
@@ -29,17 +28,9 @@ class ErrorBoundary extends React.Component {
     const { children } = this.props;
 
     return error
-      ? <div className="error-boundary">ERROR</div>
+      ? <div className="error-text">ERROR</div>
       : children
   }
 }
-
-ErrorBoundary.propTypes = {
-  children: PropTypes.node,
-};
-
-ErrorBoundary.defaultProps = {
-  children: null,
-};
 
 export default ErrorBoundary;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ErrorBoundary from 'react-tuts/error-boundary/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary';
 
 const ItemList = (props) => {
   return  props.items.length
