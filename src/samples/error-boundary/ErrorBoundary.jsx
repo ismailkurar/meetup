@@ -28,7 +28,7 @@ class ErrorBoundary extends React.Component {
     const { children } = this.props;
 
     return error
-      ? <div className="error-text">ERROR</div>
+      ? <div className="error-text">Ups! Something went wrong</div>
       : children
   }
 }
