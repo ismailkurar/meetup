@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Page from '../../components/Page';
+import Page from '../../../components/Page';
 
 const InputFunctionComponent = () => {
   const [ value, setValue ] = React.useState('');

@@ -3,8 +3,8 @@ import React from 'react';
 import './App.css';
 
 // hooks
-import InputClassComponent from '../src/samples/hooks/InputClassComponent.jsx';
-import InputFunctionComponent from '../src/samples/hooks/InputFunctionComponent.jsx';
+import InputClassComponent from './samples/hooks/useState/InputClassComponent.jsx';
+import InputFunctionComponent from './samples/hooks/useState/InputFunctionComponent.jsx';
 
 
 function App() {
