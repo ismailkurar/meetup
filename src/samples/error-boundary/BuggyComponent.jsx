@@ -8,9 +8,7 @@ const ItemList = (props) => {
 
 const BuggyComponent = () => (
   <div className="page-container">
-    <ErrorBoundary>
-      <ItemList items={null}/>
-    </ErrorBoundary>
+    <ItemList items={null}/>
     <ItemList items={['a', 'b']}/>
   </div>
 );

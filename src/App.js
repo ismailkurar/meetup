@@ -1,25 +1,25 @@
 import React from 'react';
 
+import { Route, Switch } from "react-router-dom";
 import './App.css';
+
+import Home from './home/Home';
+import Hooks from './samples/hooks/Hooks'
+
+// lifecycle
+import LifeCycle from './samples/lifecycle/LifeCycles'
 
 //error-boundary
 import BuggyComponent from './samples/error-boundary/BuggyComponent'
 
-
-// hooks
-import InputClassComponent from './samples/hooks/useState/InputClassComponent.jsx';
-import InputFunctionComponent from './samples/hooks/useState/InputFunctionComponent.jsx';
-import Counter from './samples/hooks/custom/Counter';
-import CounterWithCustomHook from './samples/hooks/custom/CounterWithCustomHook';
-
-function App() {
-  return (
-    <div className="app">
-      <div className="component-container">
-        <CounterWithCustomHook />
-      </div>
-    </div>
-  );
-}
+const App = () => (
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route  path="/lifecycle" component={LifeCycle} />
+    <Route  path="/error-boundary" component={BuggyComponent} />
+    <Route  path="/hooks" component={Hooks} />
+    <Route render={() => <h1>404 Page not found</h1>} />
+  </Switch>
+)
 
 export default App;

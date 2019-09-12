@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Page from '../../../components/Page';
 
 class Counter extends React.Component {
   state = {
@@ -32,7 +31,8 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <Page title="Counter">
+      <div>
+        <h3>Counter</h3>
         <span style={{ fontSize: 30 }}>{this.state.count}</span>
         <button
           style={{ marginLeft: 30 }}
@@ -49,7 +49,7 @@ class Counter extends React.Component {
         {
           this.state.error && <div className="error-text">{this.state.error}</div>
         }
-      </Page>
+      </div>
     )
   }
 }

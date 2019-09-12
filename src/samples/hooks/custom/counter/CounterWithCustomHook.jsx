@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Page from '../../../components/Page';
-
-import useErrorHandler from './useErrorHandler';
+import useErrorHandler from '../useErrorHandler';
 
 const CounterWithCustomHook = () => {
   const [ count, setCount ] = React.useState(0);
@@ -22,7 +20,8 @@ const CounterWithCustomHook = () => {
   };
 
   return (
-    <Page title="CounterWithCustomHook">
+    <div className="counter">
+      <h3>Counter with Custom Hook</h3>
       <span style={{ fontSize: 30 }}>{count}</span>
       <button
         style={{ marginLeft: 30 }}
@@ -39,7 +38,7 @@ const CounterWithCustomHook = () => {
       {
         error && <div className="error-text">{error}</div>
       }
-    </Page>
+    </div>
   )
 };
 

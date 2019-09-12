@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Page from '../../../components/Page';
-
 const InputFunctionComponent = () => {
   const [ value, setValue ] = React.useState('');
 
@@ -10,14 +8,15 @@ const InputFunctionComponent = () => {
   };
 
   return (
-    <Page title="InputFunctionComponent">
+    <div>
+      <h3>InputFunctionComponent</h3>
       <input
         value={value}
         type="text"
         onChange={handleChange}
       />
       <div style={{ fontSize: 24 }}>{value}</div>
-    </Page>
+    </div>
   )
 };
 

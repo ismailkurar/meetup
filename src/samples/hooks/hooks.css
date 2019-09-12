@@ -1,0 +1,25 @@
+.hooks-container {
+    width: 100%;
+}
+
+.use-state {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    flex: 2;
+}
+
+.container .item{
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+ }
+
+.use-effect {
+    width: 100%;
+}

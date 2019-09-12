@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Page from '../../../components/Page';
-
 class InputClassComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -17,14 +15,15 @@ class InputClassComponent extends React.Component {
 
   render() {
     return (
-      <Page title="InputClassComponent">
+      <div>
+        <h3>InputClassComponent</h3>
         <input
           value={this.state.value}
           type="text"
           onChange={this.handleChange}
         />
         <div style={{ fontSize: 24 }}>{this.state.value}</div>
-      </Page>
+      </div>
     )
   }
 }
